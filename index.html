@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Daphi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #e91e63;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .producto {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .producto h3 {
+      margin: 10px 0 5px;
+    }
+
+    .precio {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .btn-comprar {
+      margin-top: 10px;
+      background: #e91e63;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-comprar:hover {
+      background: #c2185b;
+    }
+
+    /* Botones flotantes */
+    .botones-flotantes {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+
+    .botones-flotantes a img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .botones-flotantes a img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tienda Daphi</h1>
+    <p>Manualidades, Piñatas y Maketas</p>
+  </header>
+
+  <div class="catalogo">
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1616628182501-c56d1c0b9132" alt="Maketa escolar">
+      <h3>Maketa Escolar</h3>
+      <p class="precio">Bs. 55</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Piñata unicornio">
+      <h3>Piñata Unicornio</h3>
+      <p class="precio">Bs. 70</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Decoración personalizada">
+      <h3>Decoración Personalizada</h3>
+      <p class="precio">Bs. 90</p>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </div>
+
+  <!-- Botones flotantes -->
+  <div class="botones-flotantes">
+    <a href="https://wa.me/59171234567?text=Hola%2C%20quiero%20más%20información" target="_blank" title="WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+    <a href="https://facebook.com/tu-pagina" target="_blank" title="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com/tu-cuenta" target="_blank" title="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+    </a>
+  </div>
+
+</body>
+</html>
